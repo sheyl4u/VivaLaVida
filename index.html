@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viva La Vida Hotel — Valencia, Spain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader">
+  <div class="loader-logo">Viva La Vida</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-emblem">VlV</div>
+    <div>
+      <div class="nav-logo-text">Viva La Vida</div>
+      <div class="nav-logo-sub">Hotel · Valencia</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#facilities">Facilities</a></li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#restaurant">Restaurant</a></li>
+    <li><a href="#reservation">Reservation</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#reservation" class="nav-book-btn">Book Now</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#facilities" onclick="closeMenu()">Facilities</a>
+  <a href="#rooms" onclick="closeMenu()">Rooms</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#restaurant" onclick="closeMenu()">Restaurant</a>
+  <a href="#reservation" onclick="closeMenu()">Reservation</a>
+  <a href="#reviews" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">★ 4.9 Rating · Valencia, Spain ★</div>
+    <h1 class="hero-title">Viva La Vida</h1>
+    <div class="hero-title-sub">Hotel &amp; Resort</div>
+    <p class="hero-tagline">Experience Luxury, Comfort, and Unforgettable Moments in the heart of Spain.</p>
+    <div class="hero-btns">
+      <a href="#reservation" class="btn-primary">Book Your Stay</a>
+      <a href="#rooms" class="btn-outline">Explore Rooms</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <i class="fa fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="4.9" data-decimal="1">0</div>
+        <div class="stat-label">Star Rating</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="10000" data-suffix="+">0</div>
+        <div class="stat-label">Happy Guests</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="250">0</div>
+        <div class="stat-label">Luxury Rooms</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="section-eyebrow">Our Story</div>
+    <h2 class="section-title">About Viva La Vida Hotel</h2>
+    <div class="section-divider"></div>
+    <div class="about-grid">
+      <div class="about-imgs reveal">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Hotel Lobby" />
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Hotel Room" />
+        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80" alt="Hotel Interior" />
+      </div>
+      <div class="about-text reveal">
+        <div class="gold-line"></div>
+        <h2>"Long Live" — the philosophy behind every moment at VlV.</h2>
+        <p>Viva La Vida, taken from Spanish meaning "Long Live Life," is more than a name — it's our promise. Nestled in the vibrant heart of Valencia, Spain, Hotel VlV combines timeless elegance with modern luxury to create an experience that lingers long after checkout.</p>
+        <p>Renowned for our 4.9-star rating, we offer 250 meticulously appointed rooms, world-class dining at Vida Saludable, and an array of curated facilities designed to delight every guest.</p>
+        <div class="about-features">
+          <div class="about-feat"><i class="fa fa-check-circle"></i> 15 years of exceptional hospitality in Valencia</div>
+          <div class="about-feat"><i class="fa fa-check-circle"></i> Award-winning Vida Saludable restaurant</div>
+          <div class="about-feat"><i class="fa fa-check-circle"></i> Complimentary breakfast across all room packages</div>
+          <div class="about-feat"><i class="fa fa-check-circle"></i> 24/7 personalised concierge service</div>
+          <div class="about-feat"><i class="fa fa-check-circle"></i> Exclusive rooftop pool with panoramic city views</div>
+        </div>
+        <a href="#reservation" class="btn-primary" style="margin-top:1.5rem; display:inline-block;">Reserve Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FACILITIES ===== -->
+<section id="facilities">
+  <div class="container">
+    <div class="section-eyebrow">What We Offer</div>
+    <h2 class="section-title">Services &amp; Facilities</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">From rejuvenating spa sessions to elegant ballroom evenings, every corner of VlV Hotel is crafted for extraordinary living.</p>
+    <div class="facilities-grid">
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/1200x/41/52/1a/41521a5841f178c2a0cc33e956f47f01.jpg" alt="Swimming Pool" /></div>
+        <div class="facility-name"><i class="fa fa-water" style="margin-right:0.4rem;font-size:0.9rem;"></i>Swimming Pool</div>
+        <div class="facility-desc">A clean, spacious rooftop pool where guests can unwind with panoramic views of Valencia.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/736x/54/4a/13/544a13bfe44fc158fd4871c412992bde.jpg" alt="Gym" /></div>
+        <div class="facility-name"><i class="fa fa-dumbbell" style="margin-right:0.4rem;font-size:0.9rem;"></i>Fitness Gym</div>
+        <div class="facility-desc">Fully equipped with premium machines and free weights — stay active during your stay.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/736x/19/5a/2a/195a2ab590cb5d0b8b7e4e8129a58366.jpg" alt="Spa" /></div>
+        <div class="facility-name"><i class="fa fa-spa" style="margin-right:0.4rem;font-size:0.9rem;"></i>Luxury Spa</div>
+        <div class="facility-desc">Massages, facials, and body treatments in a serene sanctuary designed for total restoration.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/1200x/4f/c3/a8/4fc3a865dd09b96e8224b86563c4c917.jpg" alt="Karaoke Room" /></div>
+        <div class="facility-name"><i class="fa fa-microphone" style="margin-right:0.4rem;font-size:0.9rem;"></i>Karaoke Room</div>
+        <div class="facility-desc">A private, soundproofed lounge for unforgettable evenings with friends and family.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/1200x/6c/5e/21/6c5e21227d5f9d1344a31f1602efc43b.jpg" alt="Meeting Room" /></div>
+        <div class="facility-name"><i class="fa fa-briefcase" style="margin-right:0.4rem;font-size:0.9rem;"></i>Meeting Room</div>
+        <div class="facility-desc">Smart TV, private Wi-Fi, and comfortable seating for productive business sessions.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/736x/f6/c9/cf/f6c9cf9b762b50f5a9a5bfcc9b8d3b6f.jpg" alt="Library" /></div>
+        <div class="facility-name"><i class="fa fa-book-open" style="margin-right:0.4rem;font-size:0.9rem;"></i>Library</div>
+        <div class="facility-desc">A cozy reading retreat stocked with curated titles — your quiet escape within the hotel.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://i.pinimg.com/1200x/be/c3/23/bec32372db2d2351991a82b54ad9df42.jpg" alt="Ballroom" /></div>
+        <div class="facility-name"><i class="fa fa-music" style="margin-right:0.4rem;font-size:0.9rem;"></i>Ballroom</div>
+        <div class="facility-desc">An elegant grand ballroom for weddings, galas, and private events — available to rent.</div>
+      </div>
+
+      <div class="facility-card reveal">
+        <div class="facility-img"><img src="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?w=600&q=80" alt="Child Care" /></div>
+        <div class="facility-name"><i class="fa fa-child" style="margin-right:0.4rem;font-size:0.9rem;"></i>Child Care</div>
+        <div class="facility-desc">Professional childcare staff so parents can relax fully, knowing their little ones are safe and happy.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROOMS ===== -->
+<section id="rooms">
+  <div class="container">
+    <div class="section-eyebrow">Our Accommodations</div>
+    <h2 class="section-title">Room Packages</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">From cosy twin rooms to lavish suites, every space is curated for comfort, beauty, and absolute indulgence.</p>
+    <div class="rooms-grid">
+
+      <div class="room-card reveal">
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Friendly Comfort" /></div>
+        <div class="room-body">
+          <div class="room-name">Friendly Comfort</div>
+          <div class="room-price">€350 <span style="font-size:0.75rem;font-weight:400;color:var(--text-muted)">/ night</span></div>
+          <div class="room-capacity"><i class="fa fa-user" style="color:var(--gold);margin-right:0.3rem;"></i> Capacity: 2 Guests</div>
+          <div class="room-features">
+            <div class="room-feat"><i class="fa fa-bed"></i> Twin Bed (2 Singles)</div>
+            <div class="room-feat"><i class="fa fa-bath"></i> Bathroom &amp; Toilet</div>
+            <div class="room-feat"><i class="fa fa-tv"></i> Smart TV</div>
+            <div class="room-feat"><i class="fa fa-snowflake"></i> Air Conditioner</div>
+            <div class="room-feat"><i class="fa fa-utensils"></i> Breakfast Included</div>
+          </div>
+          <button class="btn-book" onclick="openReservationWithRoom('Friendly Comfort', 350)">Book This Room</button>
+        </div>
+      </div>
+
+      <div class="room-card reveal">
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80" alt="Amor Simple" /></div>
+        <div class="room-body">
+          <div class="room-name">Amor Simple</div>
+          <div class="room-price">€450 <span style="font-size:0.75rem;font-weight:400;color:var(--text-muted)">/ night</span></div>
+          <div class="room-capacity"><i class="fa fa-user" style="color:var(--gold);margin-right:0.3rem;"></i> Capacity: 2 Guests</div>
+          <div class="room-features">
+            <div class="room-feat"><i class="fa fa-bed"></i> Double Bed</div>
+            <div class="room-feat"><i class="fa fa-bath"></i> Bathroom &amp; Toilet</div>
+            <div class="room-feat"><i class="fa fa-tv"></i> Smart TV</div>
+            <div class="room-feat"><i class="fa fa-snowflake"></i> Air Conditioner</div>
+            <div class="room-feat"><i class="fa fa-couch"></i> Parlour</div>
+            <div class="room-feat"><i class="fa fa-utensils"></i> Breakfast Included</div>
+          </div>
+          <button class="btn-book" onclick="openReservationWithRoom('Amor Simple', 450)">Book This Room</button>
+        </div>
+      </div>
+
+      <div class="room-card featured reveal">
+        <div class="room-badge">Popular</div>
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="Dos Elegantes" /></div>
+        <div class="room-body">
+          <div class="room-name">Dos Elegantes</div>
+          <div class="room-price">€650 <span style="font-size:0.75rem;font-weight:400;color:var(--text-muted)">/ night</span></div>
+          <div class="room-capacity"><i class="fa fa-user" style="color:var(--gold);margin-right:0.3rem;"></i> Capacity: 4 Guests</div>
+          <div class="room-features">
+            <div class="room-feat"><i class="fa fa-bed"></i> 2 Double Beds</div>
+            <div class="room-feat"><i class="fa fa-bath"></i> Bathroom, Toilet &amp; Bathtub</div>
+            <div class="room-feat"><i class="fa fa-tv"></i> 2 Smart TVs</div>
+            <div class="room-feat"><i class="fa fa-snowflake"></i> 2 Air Conditioners</div>
+            <div class="room-feat"><i class="fa fa-couch"></i> Parlour</div>
+            <div class="room-feat"><i class="fa fa-utensils"></i> Breakfast for 4</div>
+          </div>
+          <button class="btn-book" onclick="openReservationWithRoom('Dos Elegantes', 650)">Book This Room</button>
+        </div>
+      </div>
+
+      <div class="room-card reveal">
+        <div class="room-badge" style="background:var(--crimson);color:#fff;">Suite</div>
+        <div class="room-img"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80" alt="Golden Ruby Suite" /></div>
+        <div class="room-body">
+          <div class="room-name">Golden Ruby Suite</div>
+          <div class="room-price">€850 <span style="font-size:0.75rem;font-weight:400;color:var(--text-muted)">/ night</span></div>
+          <div class="room-capacity"><i class="fa fa-user" style="color:var(--gold);margin-right:0.3rem;"></i> Capacity: 6 Guests</div>
+          <div class="room-features">
+            <div class="room-feat"><i class="fa fa-door-open"></i> 3 Bedrooms</div>
+            <div class="room-feat"><i class="fa fa-bath"></i> 2 Bathrooms &amp; Bathtub</div>
+            <div class="room-feat"><i class="fa fa-tv"></i> 2 Smart TVs</div>
+            <div class="room-feat"><i class="fa fa-snowflake"></i> 3 Air Conditioners</div>
+            <div class="room-feat"><i class="fa fa-concierge-bell"></i> Dining Table</div>
+            <div class="room-feat"><i class="fa fa-couch"></i> Parlour</div>
+            <div class="room-feat"><i class="fa fa-archway"></i> Private Balcony</div>
+            <div class="room-feat"><i class="fa fa-utensils"></i> Breakfast for 6</div>
+          </div>
+          <button class="btn-book" onclick="openReservationWithRoom('Golden Ruby Suite', 850)">Book This Room</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-eyebrow">Visual Journey</div>
+    <h2 class="section-title">Hotel Gallery</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">A glimpse into the beauty and elegance that awaits you at Viva La Vida Hotel.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="https://i.pinimg.com/1200x/6e/54/7f/6e547f8146ac4c92fbf0bdbfa9500191.jpg" alt="Luxury Lobby" /><div class="gallery-caption">Art Museum/Collection</div></div>
+      <div class="gallery-item reveal"><img src="https://i.pinimg.com/736x/67/66/fc/6766fcfb761fa202e451bc7bd0e4433d.jpg" alt="Swimming Pool" /><div class="gallery-caption">Heaven Fountain</div></div>
+      <div class="gallery-item reveal"><img src="https://i.pinimg.com/736x/42/f7/67/42f7672f15839f3458f8e79187cf13bb.jpg" alt="Spa" /><div class="gallery-caption">Aquarium Basement</div></div>
+      <div class="gallery-item reveal"><img src="https://i.pinimg.com/1200x/30/a4/e3/30a4e36ba4e304702683e7d7cba4de32.jpg" alt="Library" /><div class="gallery-caption">Curated Library</div></div>
+      <div class="gallery-item reveal"><img src="https://i.pinimg.com/736x/aa/e6/7d/aae67d454e010e7ab3c31c0bbe331e7b.jpg" alt="Restaurant" /><div class="gallery-caption">Vida Saludable Restaurant</div></div>
+      <div class="gallery-item reveal"><img src="https://i.pinimg.com/1200x/91/0c/5a/910c5a06964c4c9c75d16a32813645bf.jpg" alt="Ballroom" /><div class="gallery-caption">Mini Garden</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESTAURANT ===== -->
+<section id="restaurant">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--gold);">Fine Dining</div>
+    <h2 class="section-title" style="color:var(--gold-lt);">Vida Saludable</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.55);">Healthy lifestyle dining with authentic Spanish and Mediterranean flavours, crafted fresh every day.</p>
+
+    <div class="restaurant-intro reveal">
+      <div class="restaurant-img">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Vida Saludable Restaurant" />
+      </div>
+      <div class="restaurant-copy">
+        <h3>Vida Saludable</h3>
+        <p>Our restaurant, named "Healthy Life," is a celebration of Spanish and Mediterranean cuisine. Set within a spacious, elegantly designed dining room, Vida Saludable serves fresh, seasonal ingredients transformed into memorable culinary experiences.</p>
+        <p>From the classic Tortilla Española at breakfast to slow-roasted Cordero Asado at dinner, every dish on our menu tells a story of Spain's rich culinary heritage.</p>
+        <a href="#" class="btn-primary" style="background:var(--gold);color:var(--dark);" onclick="document.querySelector('.menu-tabs').scrollIntoView({behavior:'smooth'}); return false;">View Full Menu</a>
+      </div>
+    </div>
+
+    <!-- Menu Tabs -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="switchTab(this,'breakfast')">Breakfast</button>
+      <button class="menu-tab" onclick="switchTab(this,'starters')">Starters</button>
+      <button class="menu-tab" onclick="switchTab(this,'mains')">Main Courses</button>
+      <button class="menu-tab" onclick="switchTab(this,'sides')">Sides</button>
+      <button class="menu-tab" onclick="switchTab(this,'desserts')">Desserts</button>
+      <button class="menu-tab" onclick="switchTab(this,'drinks')">Drinks</button>
+    </div>
+
+    <!-- Breakfast -->
+    <div class="menu-panel active" id="tab-breakfast">
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Tortilla Española</div><div class="menu-item-desc">Classic Spanish omelette with eggs, potatoes, and onions — served warm.</div></div><div class="menu-item-right"><span class="menu-price">€5.50</span><button class="btn-add" onclick="addToCart('Tortilla Española',5.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Yogur Natural con Frutas y Miel</div><div class="menu-item-desc">Creamy natural yogurt topped with seasonal fruits and honey.</div></div><div class="menu-item-right"><span class="menu-price">€5.00</span><button class="btn-add" onclick="addToCart('Yogur Natural con Frutas y Miel',5.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Croissant con Mantequilla y Mermelada</div><div class="menu-item-desc">Fresh buttery croissant with butter and homemade fruit jam.</div></div><div class="menu-item-right"><span class="menu-price">€4.00</span><button class="btn-add" onclick="addToCart('Croissant con Mantequilla y Mermelada',4.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Zumo de Naranja Natural</div><div class="menu-item-desc">Freshly squeezed orange juice from local oranges.</div></div><div class="menu-item-right"><span class="menu-price">€3.50</span><button class="btn-add" onclick="addToCart('Zumo de Naranja Natural',3.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Café o Té</div><div class="menu-item-desc">Choice of freshly brewed coffee or a selection of fine teas.</div></div><div class="menu-item-right"><span class="menu-price">€2.50</span><button class="btn-add" onclick="addToCart('Café o Té',2.50)">+</button></div></div>
+    </div>
+
+    <!-- Starters -->
+    <div class="menu-panel" id="tab-starters">
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Pulpo a la Gallega</div><div class="menu-item-desc">Tender octopus over boiled potatoes with paprika, sea salt, and olive oil.</div></div><div class="menu-item-right"><span class="menu-price">€14.00</span><button class="btn-add" onclick="addToCart('Pulpo a la Gallega',14.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Ensalada de Burrata y Tomate Heirloom</div><div class="menu-item-desc">Creamy burrata on heirloom tomatoes with fresh basil and balsamic reduction.</div></div><div class="menu-item-right"><span class="menu-price">€12.50</span><button class="btn-add" onclick="addToCart('Ensalada de Burrata y Tomate Heirloom',12.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Gazpacho Andaluz</div><div class="menu-item-desc">Refreshing cold tomato soup — a classic from Southern Spain.</div></div><div class="menu-item-right"><span class="menu-price">€7.00</span><button class="btn-add" onclick="addToCart('Gazpacho Andaluz',7.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Croquetas de Jamón Ibérico</div><div class="menu-item-desc">Crispy croquettes filled with creamy béchamel and diced Iberian ham.</div></div><div class="menu-item-right"><span class="menu-price">€9.00</span><button class="btn-add" onclick="addToCart('Croquetas de Jamón Ibérico',9.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Carpaccio de Ternera con Parmesano</div><div class="menu-item-desc">Thinly sliced raw beef with arugula, shaved parmesan, capers, and olive oil.</div></div><div class="menu-item-right"><span class="menu-price">€13.00</span><button class="btn-add" onclick="addToCart('Carpaccio de Ternera con Parmesano',13.00)">+</button></div></div>
+    </div>
+
+    <!-- Mains -->
+    <div class="menu-panel" id="tab-mains">
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Paella de Mariscos</div><div class="menu-item-desc">Traditional Valencian rice with saffron, shrimp, mussels, squid, and clams.</div></div><div class="menu-item-right"><span class="menu-price">€18.00</span><button class="btn-add" onclick="addToCart('Paella de Mariscos',18.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Lubina al Horno con Verduras Asadas</div><div class="menu-item-desc">Oven-baked sea bass with roasted vegetables and lemon herb dressing.</div></div><div class="menu-item-right"><span class="menu-price">€20.00</span><button class="btn-add" onclick="addToCart('Lubina al Horno con Verduras Asadas',20.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Cordero Asado al Romero</div><div class="menu-item-desc">Slow-roasted lamb shoulder infused with rosemary, garlic potatoes, and jus.</div></div><div class="menu-item-right"><span class="menu-price">€23.00</span><button class="btn-add" onclick="addToCart('Cordero Asado al Romero',23.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Risotto de Setas y Trufa</div><div class="menu-item-desc">Creamy arborio rice with wild mushrooms finished with truffle oil.</div></div><div class="menu-item-right"><span class="menu-price">€17.00</span><button class="btn-add" onclick="addToCart('Risotto de Setas y Trufa',17.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Raviolis de Ricotta y Espinaca</div><div class="menu-item-desc">Handmade ravioli stuffed with ricotta and spinach in sage butter sauce.</div></div><div class="menu-item-right"><span class="menu-price">€16.00</span><button class="btn-add" onclick="addToCart('Raviolis de Ricotta y Espinaca',16.00)">+</button></div></div>
+    </div>
+
+    <!-- Sides -->
+    <div class="menu-panel" id="tab-sides">
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Pan Artesano con Aceite de Oliva</div><div class="menu-item-desc">Warm rustic bread served with extra virgin olive oil.</div></div><div class="menu-item-right"><span class="menu-price">€2.00</span><button class="btn-add" onclick="addToCart('Pan Artesano con Aceite de Oliva',2.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Verduras Asadas</div><div class="menu-item-desc">Grilled seasonal vegetables seasoned with Mediterranean herbs.</div></div><div class="menu-item-right"><span class="menu-price">€4.00</span><button class="btn-add" onclick="addToCart('Verduras Asadas',4.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Patatas Bravas</div><div class="menu-item-desc">Crispy fried potatoes with spicy brava sauce and aioli.</div></div><div class="menu-item-right"><span class="menu-price">€3.50</span><button class="btn-add" onclick="addToCart('Patatas Bravas',3.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Arroz Blanco o Integral</div><div class="menu-item-desc">Steamed white or whole grain rice.</div></div><div class="menu-item-right"><span class="menu-price">€2.50</span><button class="btn-add" onclick="addToCart('Arroz Blanco o Integral',2.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Ensalada Verde</div><div class="menu-item-desc">Fresh green salad with lettuce, cucumber, and vinaigrette.</div></div><div class="menu-item-right"><span class="menu-price">€3.50</span><button class="btn-add" onclick="addToCart('Ensalada Verde',3.50)">+</button></div></div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-panel" id="tab-desserts">
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Crema Catalana</div><div class="menu-item-desc">Creamy custard with a caramelized sugar crust, flavored with citrus and cinnamon.</div></div><div class="menu-item-right"><span class="menu-price">€6.00</span><button class="btn-add" onclick="addToCart('Crema Catalana',6.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Tarta de Queso al Estilo Vasco</div><div class="menu-item-desc">Basque burnt cheesecake — rich, creamy, with a caramelized top.</div></div><div class="menu-item-right"><span class="menu-price">€7.00</span><button class="btn-add" onclick="addToCart('Tarta de Queso al Estilo Vasco',7.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Churros con Chocolate Caliente</div><div class="menu-item-desc">Fried dough pastries served with thick Spanish hot chocolate for dipping.</div></div><div class="menu-item-right"><span class="menu-price">€6.50</span><button class="btn-add" onclick="addToCart('Churros con Chocolate Caliente',6.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mousse de Chocolate y Naranja</div><div class="menu-item-desc">Light dark chocolate mousse with a touch of orange zest.</div></div><div class="menu-item-right"><span class="menu-price">€6.50</span><button class="btn-add" onclick="addToCart('Mousse de Chocolate y Naranja',6.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Helado Artesanal de Turrón</div><div class="menu-item-desc">Artisan ice cream flavored with traditional Spanish nougat (turrón).</div></div><div class="menu-item-right"><span class="menu-price">€5.50</span><button class="btn-add" onclick="addToCart('Helado Artesanal de Turrón',5.50)">+</button></div></div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-panel" id="tab-drinks">
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Sangría Clásica</div><div class="menu-item-desc">Red wine punch with fresh fruits, brandy, and citrus.</div></div><div class="menu-item-right"><span class="menu-price">€6.00</span><button class="btn-add" onclick="addToCart('Sangría Clásica',6.00)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Vino de la Casa</div><div class="menu-item-desc">House red or white wine, selected from local Valencia vineyards.</div></div><div class="menu-item-right"><span class="menu-price">€5.50</span><button class="btn-add" onclick="addToCart('Vino de la Casa',5.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Agua Mineral</div><div class="menu-item-desc">Still or sparkling mineral water.</div></div><div class="menu-item-right"><span class="menu-price">€2.50</span><button class="btn-add" onclick="addToCart('Agua Mineral',2.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Refrescos</div><div class="menu-item-desc">A selection of soft drinks (Coca-Cola, Fanta, etc.).</div></div><div class="menu-item-right"><span class="menu-price">€2.50</span><button class="btn-add" onclick="addToCart('Refrescos',2.50)">+</button></div></div>
+      <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Café Espresso</div><div class="menu-item-desc">Espresso with a splash of milk.</div></div><div class="menu-item-right"><span class="menu-price">€2.50</span><button class="btn-add" onclick="addToCart('Café Espresso',2.50)">+</button></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== RESERVATION ===== -->
+<section id="reservation">
+  <div class="container">
+    <div class="section-eyebrow">Book Your Stay</div>
+    <h2 class="section-title">Make a Reservation</h2>
+    <div class="section-divider"></div>
+    <div class="reservation-grid">
+      <div class="reservation-info reveal">
+        <h3>We'd love to host you.</h3>
+        <p>Complete the form to secure your stay at Viva La Vida Hotel. Our team will confirm your booking within 24 hours and assist with any special requests.</p>
+        <div class="res-contact-item"><i class="fa fa-phone"></i><span>+34 961 234 567</span></div>
+        <div class="res-contact-item"><i class="fa fa-envelope"></i><span>vlvhotel.spain@gmail.com</span></div>
+        <div class="res-contact-item"><i class="fa fa-clock"></i><span>Check-in: 14:00 | Check-out: 12:00</span></div>
+        <div class="res-contact-item"><i class="fa fa-map-marker-alt"></i><span>Valencia, Spain</span></div>
+      </div>
+      <div class="form-box reveal">
+        <form id="reservationForm" onsubmit="submitReservation(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="fname" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" id="femail" placeholder="john@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="fphone" placeholder="+34 000 000 000" required />
+            </div>
+            <div class="form-group">
+              <label>Number of Guests *</label>
+              <select id="fguests" required>
+                <option value="">Select guests</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Check-In Date *</label>
+              <input type="date" id="fcheckin" required />
+            </div>
+            <div class="form-group">
+              <label>Check-Out Date *</label>
+              <input type="date" id="fcheckout" required />
+            </div>
+            <div class="form-group full">
+              <label>Room Type *</label>
+              <select id="froomtype" required>
+                <option value="">Select a room</option>
+                <option value="350">Friendly Comfort — €350/night</option>
+                <option value="450">Amor Simple — €450/night</option>
+                <option value="650">Dos Elegantes — €650/night</option>
+                <option value="850">Golden Ruby Suite — €850/night</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>Special Request</label>
+              <textarea id="frequest" placeholder="e.g. early check-in, extra pillows, allergy info..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Confirm Reservation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-eyebrow">What Guests Say</div>
+    <h2 class="section-title">Customer Reviews</h2>
+    <div class="section-divider"></div>
+    <div class="reviews-slider reveal">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"The hotel service is very good and the food is also very delicious. I really like it, you must try it!"</div>
+            <div class="review-author">
+              <div class="review-avatar">C</div>
+              <div><div class="review-name">Choi Hyun-wook</div><div class="review-loc">Seoul, South Korea</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"The design of Viva La Vida Hotel is really amazing, bringing a classic atmosphere. My partner and I kept taking pictures all around the hotel!"</div>
+            <div class="review-author">
+              <div class="review-avatar">L</div>
+              <div><div class="review-name">Lana Del Rey</div><div class="review-loc">New York, USA</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"The rooms are very clean and the restaurant menu is incredibly complete — of course the taste is very delicious too!"</div>
+            <div class="review-author">
+              <div class="review-avatar">D</div>
+              <div><div class="review-name">Daniel Caesar</div><div class="review-loc">Toronto, Canada</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"Love it! The facilities are quite a lot and very impressive. There's even a ballroom with complete musical instruments — I played Waltz on the Cello provided!"</div>
+            <div class="review-author">
+              <div class="review-avatar">S</div>
+              <div><div class="review-name">Seol In-ah</div><div class="review-loc">Seoul, South Korea</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-arrows">
+        <button class="slider-btn" onclick="slideReview(-1)"><i class="fa fa-chevron-left"></i></button>
+        <button class="slider-btn" onclick="slideReview(1)"><i class="fa fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots" id="sliderDots">
+        <div class="dot active" onclick="goToReview(0)"></div>
+        <div class="dot" onclick="goToReview(1)"></div>
+        <div class="dot" onclick="goToReview(2)"></div>
+        <div class="dot" onclick="goToReview(3)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-eyebrow">Get In Touch</div>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">We're here to assist you 24 hours a day, 7 days a week. Reach out anytime — we'd love to hear from you.</p>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h3>Viva La Vida Hotel</h3>
+        <p>Experience the finest hospitality Valencia has to offer. Our dedicated team is always ready to ensure your stay is exceptional.</p>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa fa-phone"></i></div>
+          <div><div class="contact-label">Phone</div><div class="contact-value">+34 961 234 567</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+          <div><div class="contact-label">Email</div><div class="contact-value">vlvhotel.spain@gmail.com</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa fa-globe"></i></div>
+          <div><div class="contact-label">Website</div><div class="contact-value">www.vlvhotel-spain.com</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa fa-map-marker-alt"></i></div>
+          <div><div class="contact-label">Location</div><div class="contact-value">Valencia, Spain</div></div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99497.87867327613!2d-0.43614474999999996!3d39.4699075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xc537df31a5d3e30f!2sValencia%2C%20Spain!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="foot-logo">Viva La Vida</span>
+        <p>An unforgettable luxury experience in the heart of Valencia, Spain. Where every stay becomes a cherished memory.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#rooms">Room Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#restaurant">Restaurant</a>
+        <a href="#reservation">Reservation</a>
+      </div>
+      <div class="footer-col">
+        <h4>Room Types</h4>
+        <a href="#rooms">Friendly Comfort</a>
+        <a href="#rooms">Amor Simple</a>
+        <a href="#rooms">Dos Elegantes</a>
+        <a href="#rooms">Golden Ruby Suite</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa fa-phone" style="color:var(--gold);margin-right:0.4rem;font-size:0.75rem;"></i>+34 961 234 567</p>
+        <p><i class="fa fa-envelope" style="color:var(--gold);margin-right:0.4rem;font-size:0.75rem;"></i>vlvhotel.spain@gmail.com</p>
+        <p><i class="fa fa-map-marker-alt" style="color:var(--gold);margin-right:0.4rem;font-size:0.75rem;"></i>Valencia, Spain</p>
+        <p><i class="fa fa-globe" style="color:var(--gold);margin-right:0.4rem;font-size:0.75rem;"></i>www.vlvhotel-spain.com</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Viva La Vida Hotel. All rights reserved. Presented by Sheyla &amp; Findy.</div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa fa-arrow-up"></i>
+</button>
+
+<!-- ===== CART FLOAT ===== -->
+<div class="cart-float" id="cartFloat" onclick="openCartModal()" style="display:none;">
+  <i class="fa fa-shopping-bag"></i>
+  <span class="cart-float-count" id="cartCount">0 items</span>
+  <span class="cart-float-total" id="cartTotal">€0.00</span>
+</div>
+
+<!-- ===== BOOKING MODAL ===== -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3>Booking Summary</h3>
+      <button class="modal-close" onclick="closeModal('bookingModal')"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body" id="bookingModalBody"></div>
+  </div>
+</div>
+
+<!-- ===== CART MODAL ===== -->
+<div class="modal-overlay" id="cartModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3>Your Order — Vida Saludable</h3>
+      <button class="modal-close" onclick="closeModal('cartModal')"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body" id="cartModalBody"></div>
+  </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  /* ===== LOADER ===== */
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hidden');
+    }, 2000);
+  });
+
+  /* ===== NAVBAR ===== */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('backTop').classList.toggle('visible', window.scrollY > 400);
+    updateActiveNav();
+  });
+
+  function updateActiveNav() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function toggleMenu() {
+    const h = document.getElementById('hamburger');
+    const m = document.getElementById('mobileMenu');
+    h.classList.toggle('open');
+    m.classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('hamburger').classList.remove('open');
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ===== COUNTER ANIMATION ===== */
+  function animateCounters() {
+    document.querySelectorAll('[data-target]').forEach(el => {
+      const target = parseFloat(el.dataset.target);
+      const decimals = parseInt(el.dataset.decimal || 0);
+      const suffix = el.dataset.suffix || '';
+      let start = 0;
+      const duration = 2000;
+      const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const value = (target * ease).toFixed(decimals);
+        el.textContent = (value >= 1000 ? Math.floor(value).toLocaleString() : value) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }
+  const statsObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); }
+  }, { threshold: 0.3 });
+  const statsSection = document.getElementById('stats');
+  if (statsSection) statsObserver.observe(statsSection);
+
+  /* ===== MENU TABS ===== */
+  function switchTab(btn, id) {
+    document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + id).classList.add('active');
+  }
+
+  /* ===== CART ===== */
+  let cart = JSON.parse(localStorage.getItem('vlv_cart') || '[]');
+
+  function saveCart() { localStorage.setItem('vlv_cart', JSON.stringify(cart)); }
+
+  function addToCart(name, price) {
+    const existing = cart.find(i => i.name === name);
+    if (existing) { existing.qty++; }
+    else { cart.push({ name, price, qty: 1 }); }
+    saveCart(); updateCartUI();
+    const btn = event.target;
+    btn.textContent = '✓'; btn.style.background = '#2e7d32'; btn.style.color = '#fff';
+    setTimeout(() => { btn.textContent = '+'; btn.style.background = ''; btn.style.color = ''; }, 1200);
+  }
+
+  function updateCartUI() {
+    const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+    const count = cart.reduce((s, i) => s + i.qty, 0);
+    const floatEl = document.getElementById('cartFloat');
+    floatEl.style.display = count > 0 ? 'flex' : 'none';
+    document.getElementById('cartCount').textContent = count + (count === 1 ? ' item' : ' items');
+    document.getElementById('cartTotal').textContent = '€' + total.toFixed(2);
+  }
+
+  function openCartModal() {
+    const body = document.getElementById('cartModalBody');
+    if (cart.length === 0) {
+      body.innerHTML = '<div class="cart-empty"><i class="fa fa-shopping-bag"></i>Your order is empty.<br>Browse the menu above to add items.</div>';
+    } else {
+      const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+      let html = cart.map((item, idx) => `
+        <div class="cart-item">
+          <div>
+            <div class="cart-item-name">${item.name}</div>
+            <div class="cart-item-price">€${item.price.toFixed(2)} each</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <div class="qty-ctrl">
+              <button class="qty-btn" onclick="changeQty(${idx},-1)">−</button>
+              <span class="qty-num">${item.qty}</span>
+              <button class="qty-btn" onclick="changeQty(${idx},1)">+</button>
+            </div>
+            <span class="cart-item-total">€${(item.price*item.qty).toFixed(2)}</span>
+            <button class="cart-remove" onclick="removeCartItem(${idx})"><i class="fa fa-trash"></i></button>
+          </div>
+        </div>`).join('');
+      html += `<div class="cart-grand"><span>Total Order</span><strong>€${total.toFixed(2)}</strong></div>
+               <button class="btn-checkout" onclick="checkoutCart()">Proceed to Checkout</button>`;
+      body.innerHTML = html;
+    }
+    document.getElementById('cartModal').classList.add('open');
+  }
+
+  function changeQty(idx, delta) {
+    cart[idx].qty += delta;
+    if (cart[idx].qty <= 0) cart.splice(idx, 1);
+    saveCart(); updateCartUI(); openCartModal();
+  }
+  function removeCartItem(idx) { cart.splice(idx, 1); saveCart(); updateCartUI(); openCartModal(); }
+
+  function checkoutCart() {
+    if (cart.length === 0) return;
+    const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+    const items = cart.map(i => `${i.name} x${i.qty}`).join(', ');
+    closeModal('cartModal');
+    const body = document.getElementById('bookingModalBody');
+    body.innerHTML = `
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.25rem;">Your order from <strong>Vida Saludable</strong> has been placed. Our team will prepare it shortly.</p>
+      <div class="booking-summary-item"><span>Items</span><span style="max-width:280px;text-align:right;font-size:0.8rem;">${items}</span></div>
+      <div class="booking-total"><span>Total Amount</span><strong>€${total.toFixed(2)}</strong></div>
+      <button class="btn-confirm" onclick="cart=[];saveCart();updateCartUI();closeModal('bookingModal');alert('Order placed! Thank you — your food will be served shortly. ¡Buen provecho!')">Confirm Order</button>`;
+    document.getElementById('bookingModal').classList.add('open');
+  }
+
+  /* ===== RESERVATION ===== */
+  function openReservationWithRoom(name, price) {
+    document.getElementById('froomtype').value = String(price);
+    document.getElementById('reservation').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  document.getElementById('fcheckin').min = new Date().toISOString().split('T')[0];
+  document.getElementById('fcheckout').min = new Date().toISOString().split('T')[0];
+  document.getElementById('fcheckin').addEventListener('change', function() {
+    document.getElementById('fcheckout').min = this.value;
+  });
+
+  function submitReservation(e) {
+    e.preventDefault();
+    const name = document.getElementById('fname').value.trim();
+    const email = document.getElementById('femail').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const checkin = document.getElementById('fcheckin').value;
+    const checkout = document.getElementById('fcheckout').value;
+    const guests = document.getElementById('fguests').value;
+    const roomSel = document.getElementById('froomtype');
+    const roomName = roomSel.options[roomSel.selectedIndex].text.split(' — ')[0];
+    const roomPrice = parseFloat(roomSel.value);
+    const request = document.getElementById('frequest').value;
+
+    if (!name || !email || !phone || !checkin || !checkout || !guests || !roomSel.value) {
+      alert('Please fill in all required fields.'); return;
+    }
+
+    const ci = new Date(checkin), co = new Date(checkout);
+    if (co <= ci) { alert('Check-out date must be after check-in date.'); return; }
+
+    const nights = Math.ceil((co - ci) / (1000 * 60 * 60 * 24));
+    const total = nights * roomPrice;
+
+    const booking = { name, email, phone, checkin, checkout, guests, roomName, roomPrice, nights, total, request, id: 'VLV' + Date.now() };
+    localStorage.setItem('vlv_booking_' + booking.id, JSON.stringify(booking));
+
+    const body = document.getElementById('bookingModalBody');
+    body.innerHTML = `
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.25rem;">Thank you, <strong>${name}</strong>! Your reservation has been received.</p>
+      <div class="booking-summary-item"><span>Booking ID</span><strong>${booking.id}</strong></div>
+      <div class="booking-summary-item"><span>Room</span><span>${roomName}</span></div>
+      <div class="booking-summary-item"><span>Check-In</span><span>${checkin}</span></div>
+      <div class="booking-summary-item"><span>Check-Out</span><span>${checkout}</span></div>
+      <div class="booking-summary-item"><span>Duration</span><span>${nights} night${nights > 1 ? 's' : ''}</span></div>
+      <div class="booking-summary-item"><span>Guests</span><span>${guests}</span></div>
+      <div class="booking-summary-item"><span>Rate</span><span>€${roomPrice}/night</span></div>
+      ${request ? `<div class="booking-summary-item"><span>Special Request</span><span style="max-width:240px;text-align:right;">${request}</span></div>` : ''}
+      <div class="booking-total"><span>Total Amount</span><strong>€${total.toLocaleString()}</strong></div>
+      <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:1rem;">A confirmation email will be sent to <strong>${email}</strong> within 24 hours.</p>
+      <button class="btn-confirm" onclick="document.getElementById('reservationForm').reset(); closeModal('bookingModal'); alert('Booking confirmed! See you at VlV Hotel. ¡Hasta pronto!')">Confirm &amp; Close</button>`;
+    document.getElementById('bookingModal').classList.add('open');
+  }
+
+  /* ===== REVIEWS SLIDER ===== */
+  let currentSlide = 0;
+  const totalSlides = 4;
+  let autoSlide = setInterval(() => slideReview(1), 5000);
+
+  function slideReview(dir) {
+    currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+    goToReview(currentSlide);
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => slideReview(1), 5000);
+  }
+
+  function goToReview(idx) {
+    currentSlide = idx;
+    document.getElementById('reviewsTrack').style.transform = `translateX(-${idx * 100}%)`;
+    document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+
+  /* ===== MODALS ===== */
+  function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+  document.querySelectorAll('.modal-overlay').forEach(m => {
+    m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open'); });
+  });
+
+  /* ===== INIT ===== */
+  updateCartUI();
+</script>
+</body>
+</html>
